@@ -1090,6 +1090,38 @@ input[type="text"] {
 		}
 	}	
 }
+.cv {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(.5s);
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	a {
+		width: 50px;
+		height: 50px;
+		display: table;
+		background: rgba(40, 29, 131, 0.8);
+		color: $brand-white;
+		text-align: center;
+		@include border-radius(50%);
+		i {
+			height: 50px;
+			display: table-cell;
+			vertical-align: middle;
+
+		}
+		&:hover, &:active, &:focus {
+			text-decoration: none;
+			outline: none;
+		}
+	}	
+}
 
 
 // Buttons

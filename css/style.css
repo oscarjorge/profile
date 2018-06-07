@@ -876,6 +876,38 @@ input[type="text"] {
       text-decoration: none;
       outline: none; }
 
+.cv {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .cv.active {
+    opacity: 1;
+    visibility: visible; }
+  .cv a {
+    width: 50px;
+    height: 50px;
+    display: table;
+    background: rgba(40, 29, 131, 0.8);
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+    .cv a i {
+      height: 50px;
+      display: table-cell;
+      vertical-align: middle; }
+    .cv a:hover, .cv a:active, .cv a:focus {
+      text-decoration: none;
+      outline: none; }
+
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
