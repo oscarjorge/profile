@@ -2,8 +2,7 @@ function sendMail(nombre,  mail, asunto, mensaje) {
     
 
      if ($("form").valid()) {
-        console.log('enviando');
-        // $('#btnEnviar>i').toggleClass('fa-paper-plane-o fa-spinner fa-pulse');
+        $('#btnEnviar>i').toggleClass('fa-paper-plane-o fa-spinner fa-pulse');
         // $('#sobre').toggleClass('fa-envelope fa-envelope-open');
         var parametros = {
             "Nombre": nombre,
@@ -18,8 +17,8 @@ function sendMail(nombre,  mail, asunto, mensaje) {
             type: 'POST',
 
             success: function (response) {
-                // $('#btnEnviar').removeClass('btn-danger');
-                // $("form")[0].reset();
+                $('#btnEnviar').removeClass('btn-danger');
+                $("form")[0].reset();
                 // $("i.prefix, label").removeClass('active');
                 var options =  {
                     content: "El mensaje se ha enviado correctamente",
@@ -29,13 +28,14 @@ function sendMail(nombre,  mail, asunto, mensaje) {
             },
             error:function(){
                 console.log('error');
-                // $('#btnEnviar').addClass('btn-danger'); 
+                $('#btnEnviar').addClass('btn-danger'); 
                 var options =  {
                     content: "Ha ocurrido un error y no se ha podido enviar el mensaje.",
                 }
                 $.snackbar(options);
             },
             complete:function(){
+                $('#btnEnviar>i').toggleClass('fa-paper-plane-o fa-spinner fa-pulse');
                 // setTimeout(function(){ 
                 //     $('#btnEnviar>i').toggleClass('fa-paper-plane-o fa-spinner fa-pulse');
                 //     $('#sobre').toggleClass('fa-envelope fa-envelope-open');

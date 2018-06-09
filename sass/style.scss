@@ -1036,39 +1036,12 @@ h1, h2, h3, h4, h5, h6, figure {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-.form-control {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-	border: none;
-	border: 2px solid rgba(0,0,0,.1);
-	font-size: 18px;
-	
-	font-weight: 300;
-	@include border-radius(4px);
-	
-	&:focus, &:active {
-		box-shadow: none;
-		border: 2px solid rgba(0,0,0,.8);
-	}
-	.error{
-		animation: shake 0.5s; 
-		/* When the animation is finished, start again */
-		animation-iteration-count: 1; 
-		border-color:red;
-	}
-
+.error{
+	animation: shake 0.5s; 
+	/* When the animation is finished, start again */
+	animation-iteration-count: 1; 
+	border-color:red;
 }
-
-input[type="text"] {
-	height: 50px;
-}
-.form-group {
-	margin-bottom: 30px;
-}
-
 
 // Map
 #map {
@@ -1289,20 +1262,6 @@ input[type="text"] {
 			opacity: 1;
 		}
 	}
-}
-// Form Input Field
-.form-control {
-	box-shadow: none;
-	background: transparent;
-	border: 2px solid rgba(0, 0, 0, 0.1);
-	height: 54px;
-	font-size: 18px;
-	font-weight: 300;
-  	&:active, &:focus {
-  		outline: none;
-		box-shadow: none;
-		border-color: $brand-primary;
-  }
 }
 
 .row-pb-md {
