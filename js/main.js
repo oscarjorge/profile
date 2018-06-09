@@ -85,7 +85,7 @@
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
+			}, 1000, 'easeInOutExpo');
 			
 			return false;
 		});
@@ -143,6 +143,7 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+		
 	});
 
 
