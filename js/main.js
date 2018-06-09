@@ -143,7 +143,7 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
-		
+		$('[data-toggle="tooltip"]').tooltip()
 	});
 
 
