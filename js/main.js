@@ -143,7 +143,11 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
-		$('[data-toggle="tooltip"]').tooltip()
+		$('[data-toggle="tooltip"]').tooltip();
+		//Se queda pillado no sé por qué. Lo escondo explicitamente
+		$('.cv').on('mouseout', function(){
+			$(this).tooltip('hide')
+		})
 	});
 
 
