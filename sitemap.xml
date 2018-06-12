@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.oscarjorge.es/</loc>
+  <lastmod>2018-06-10T16:06:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.oscarjorge.es/CV_OscarJorgeCastillo_ES.docx</loc>
+  <lastmod>2018-06-08T17:29:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
