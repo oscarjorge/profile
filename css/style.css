@@ -426,6 +426,28 @@ h1, h2, h3, h4, h5, h6, figure {
             top: 30px; }
           .timeline > li > .timeline-panel:after {
             top: 31px; } }
+    .timeline > li > .timeline-panel.front {
+      opacity: 1;
+      transition: .5s ease; }
+    @media screen and (min-width: 992px) {
+      .timeline > li:hover .timeline-panel {
+        opacity: 1; }
+      .timeline > li:hover .timeline-panel.back {
+        opacity: 1; }
+      .timeline > li:hover .timeline-panel.front {
+        opacity: 0;
+        transition: .5s ease; } }
+    .timeline > li .timeline-panel.back {
+      position: absolute;
+      overflow-y: scroll;
+      text-align: left;
+      height: 100%;
+      font-size: 80%;
+      opacity: 0; }
+      .timeline > li .timeline-panel.back ul {
+        list-style-type: none; }
+    .timeline > li > .timeline-badge.experience {
+      cursor: pointer; }
     .timeline > li > .timeline-badge {
       color: #fff;
       width: 44px;
@@ -472,9 +494,13 @@ h1, h2, h3, h4, h5, h6, figure {
         border-right-width: 14px;
         left: -14px;
         right: auto; }
+    .timeline > li.timeline-inverted > .timeline-panel.back {
+      right: 0; }
 
 .timeline-title {
   margin-top: 0; }
+  .timeline-title > .btn-timeline {
+    cursor: pointer; }
 
 .company {
   display: block;
@@ -518,6 +544,10 @@ h1, h2, h3, h4, h5, h6, figure {
     border-right-width: 14px;
     left: -14px;
     right: auto; } }
+.modal-body {
+  overflow-y: auto;
+  height: 300px; }
+
 .progress-wrap {
   width: 100%;
   float: left;

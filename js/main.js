@@ -143,12 +143,37 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+
+		$(".timeline-badge.experience").on('click', function(){
+			$('.modal-body').empty();
+			$('.modal-header').empty();
+			$(this).siblings('.front').children().first().clone().appendTo('.modal-header');
+			$(this).siblings('.back').clone().appendTo('.modal-body');
+			$('.modal').modal('show');
+		});
+
+
 		//De momento quito el tooltip porque no va bien en el móvil
 		// $('[data-toggle="tooltip"]').tooltip();
 		// //Se queda pillado no sé por qué. Lo escondo explicitamente
 		// $('.cv').on('mouseout', function(){
 		// 	$(this).tooltip('hide')
 		// })
+		// $('.timeline-badge').on('mouseover', function(){
+		// 	$('.timeline-panel.front').fadeOut(100,function(){
+		// 		$('.timeline-panel.front').css('display', 'none');
+		// 		$('.timeline-panel.back').fadeIn(100);
+				
+		// 	})
+		// })
+		// $('.timeline-badge').on('mouseout', function(){
+		// 	$('.timeline-panel.back').fadeOut(100,function(){
+		// 		$('.timeline-panel.back').css('display', 'none');
+		// 		$('.timeline-panel.front').fadeIn(100);
+				
+		// 	})
+		// })
+	
 	});
 
 

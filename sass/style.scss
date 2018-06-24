@@ -525,6 +525,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 		}
 	}
+	
 	> li{
 		margin-bottom: 20px;
 		position: relative;
@@ -557,7 +558,45 @@ h1, h2, h3, h4, h5, h6, figure {
 				}
 			}
 		}
+		> .timeline-panel.front {
+			opacity: 1;
+			transition: .5s ease;
+
+		}
+		&:hover {
+			@media screen and (min-width: $screen-md) {
+				.timeline-panel{
+					opacity: 1;
+				}
+				.timeline-panel.back{
+					opacity: 1;
+				}
+				.timeline-panel.front{
+					opacity: 0;
+					transition: .5s ease;
+				}
+			}
+			
+		}
+		
+
+		.timeline-panel.back {
+			position: absolute;
+			overflow-y: scroll;
+			text-align: left;
+			 height: 100%;
+			 font-size: 80%;
+			opacity: 0;
+			ul{
+				list-style-type: none;
+			}
+			
+		  }
+		> .timeline-badge.experience {
+			cursor: pointer;
+		}
 		> .timeline-badge {
+			
 			color: #fff;
 			width: 44px;
 			height: 44px;
@@ -584,6 +623,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				height: 44px;
 				font-size: 18px;
 			}
+			
 		}
 		&.timeline-unverted{
 			text-align: right;
@@ -607,12 +647,18 @@ h1, h2, h3, h4, h5, h6, figure {
 					right: auto;
 				}
 			}
+			>.timeline-panel.back {
+				right: 0;
+			}
 		}
 	}
 }
 
 .timeline-title {
    margin-top: 0;
+   > .btn-timeline{
+	   cursor: pointer;
+   }
 }
 .company{
 	display: block;
@@ -667,7 +713,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	   right: auto;
 	}
 }
-
+.modal-body{
+	overflow-y: auto;
+	height: 300px;
+}
 //PROGRESS
 .progress-wrap{
 	width: 100%;
