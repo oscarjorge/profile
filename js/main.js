@@ -152,6 +152,14 @@
 			$('.modal').modal('show');
 		});
 
+		$(".timeline-badge.experience").on('mouseover', function(){
+			$(this).children('i').toggleClass('icon-suitcase');
+			$(this).children('i').toggleClass('icon-plus');
+		});
+		$(".timeline-badge.experience").on('mouseout', function(){
+			$(this).children('i').toggleClass('icon-suitcase');
+			$(this).children('i').toggleClass('icon-plus');
+		});
 
 		//De momento quito el tooltip porque no va bien en el móvil
 		// $('[data-toggle="tooltip"]').tooltip();
