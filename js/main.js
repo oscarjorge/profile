@@ -143,7 +143,7 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
-		$(".card").flip();
+		//$(".card").flip();
 		$(".timeline-badge.experience").on('click', function(){
 			$('.modal-body').empty();
 			$('.modal-header').empty();
