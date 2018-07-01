@@ -5,15 +5,16 @@ function sendMail(nombre,  mail, asunto, mensaje) {
         $('#btnEnviar>i').toggleClass('fa-paper-plane-o fa-spinner fa-pulse');
         // $('#sobre').toggleClass('fa-envelope fa-envelope-open');
         var parametros = {
-            "Nombre": nombre,
-            "Email": mail,
-            "Asunto": asunto,
-            "Mensaje": mensaje,
+            "Name": nombre,
+            "From": mail,
+            "Subject": asunto,
+            "Body": mensaje,
         };
         console.log(parametros)
         $.ajax({
             data: parametros,
-            url: 'http://apiescribano.antonioescribano.es/api/contacto/EnviarMailComentarioProfile',
+            url: 'http://commonapi.oscarjorge.es/mail/SendProfile',
+            //url:'http://localhost:60606/api/mail/SendProfile',
             type: 'POST',
 
             success: function (response) {
