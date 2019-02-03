@@ -22,7 +22,8 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-
+	const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+	observer.observe();
 	
 	var fullHeight = function() {
 
